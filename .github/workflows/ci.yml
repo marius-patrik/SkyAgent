@@ -29,11 +29,13 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      - name: Install Playwright Chromium
+        run: |
+          PLAYWRIGHT_CLI=$(node -p "require('node:path').join(require('node:path').dirname(require.resolve('@playwright/test', { paths: [process.cwd() + '/packages/web'] })), 'cli.js')")
+          node "$PLAYWRIGHT_CLI" install chromium
+
       - name: Run CI checks
         run: bun run ci
-
-      - name: Install Playwright Chromium
-        run: bunx playwright install chromium
 
       - name: Run web visual QA
         run: bun run visual:web
