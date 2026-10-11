@@ -31,7 +31,7 @@ jobs:
 
       - name: Install Playwright Chromium
         run: |
-          PLAYWRIGHT_CLI=$(node -p "require.resolve('playwright/cli.js', { paths: ['./packages/web'] })")
+          PLAYWRIGHT_CLI=$(node -p "require.resolve('@playwright/test/cli.js', { paths: [process.cwd() + '/packages/web'] })")
           node "$PLAYWRIGHT_CLI" install chromium
 
       - name: Run CI checks
