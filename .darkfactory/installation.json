@@ -4,12 +4,12 @@
   "slug": "marius-patrik/SkyAgent",
   "sourceBranch": "main",
   "release": {
-    "tag": "v0.292.1",
-    "sha": "4a922f5be5ec3d928f9142424674b433e0f40b71",
-    "digest": "6fd45af8897dae25a55f16f887d790e23a8b2324c659013ff32dcb6a8a6d6313"
+    "tag": "v0.292.2",
+    "sha": "a39c404923882070ad98720f5f789fe279fa932e",
+    "digest": "1e97f748cca22d1c239f6f0f2d25c5e70032bbb48cf75c1c477a2a4d445dd822"
   },
   "fileHashes": {
-    "repo.dfconfig": "4e36d5a1d6cbbb2ef2d03d601da1834cbdc58df9539eb37b9e143b3b66e225b7",
-    ".github/workflows/darkfactory-control.yml": "f3e95d04e2cfa081fa96a8b7927b69bb070803459cb59305b6abb1c266b26e70"
+    "repo.dfconfig": "22d3f7a5201404151ef1971a04c401c1543df42b80c81c67c36bf691fc14ddcd",
+    ".github/workflows/darkfactory-control.yml": "c8754e25bdcf15a57d509a7d016f7584d8726171d8608282302e7ab31f37f358"
   }
 }
